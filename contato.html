@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="img/x-con" href="img/Logo-trabalho-web.png">
+
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <h1>
+                <a href="index.html">
+                    <img src="img/Logo-trabalho-web.png" alt="Meu Logo" width="200px" height="200px">
+                </a>
+            </h1>
+            <ul>
+                <br><br>
+                <li><a href="index.html" >INÍCIO</a></li>
+                <li><a href="service.html" >SERVIÇOS</a></li>
+                <li><a href="contato.html" >CONTATO</a></li>
+                <li><a href="produtos.html" >PRODUTOS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container clearfix">
+            <img src="img/redragon-2.jpg" alt="Img Computadores">
+        </div>
+    </header>
+
+
+
+
+    <body>
+        <div class="form">
+            
+            
+            <h1><b>NOS ENVIE UM E-MAIL</b></h1>
+            
+            <main>
+                <div class="container clearfix">
+                    <div class="col-12">
+
+                        <form id="felipe">
+                            <ul>
+                                <label for="nome">Informe Seu Nome</label>
+                                <input type="text" name="nome" id="nome" placeholder="Nome" required>
+
+
+                                <label for="email">Informe o seu email<label>
+                                        <input type="email" name="email" id="email" placeholder="email" required>
+
+
+                                        <br>
+                                        <br>
+                                        <br>
+
+                                        <label>Informe Sua Turma</label>
+                                        <div class="form-group">
+                                            <input type="radio" name="turma" id="turma1a" value="1A" checked>
+                                            <label for="turma_1A">1A</label>
+                                            <input type="radio" name="turma" id="turma_1B" value="1B">
+                                            <label for="turma_1B">1B</label>
+
+
+                                        </div>
+
+                                        <br>
+                                        <br>
+
+
+                                        <label for="nome">Motivo</label>
+                                        <select name="motivo" id="motivo" required>
+                                            <option value="">Selecione o Motivo</option>
+
+                                            <option value="Dúvida">Dúvida</option>
+                                            <option value="sugestão">Sugestão</option>
+                                            <option value="problema">Relatar Problema</option>
+                                            <option value="outro">Outro</option>
+
+                                        </select>
+
+                                        <br>
+                                        <br>
+
+                                        <label for="mensagem">Informe Sua Mensagem:</label>
+
+                                        <br>
+                                        
+
+
+                                        <textarea name="mensagem" id="mensagem" rows="5"></textarea>
+
+
+                                        <button type="submit">Enviar</button>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+            emailjs.init("eSiFPX8s16f_VpUxy");
+            })();
+        </script>
+
+        <script>emailjs.sendForm("service_6cuopyg", "template_rwok12z", "felipe")</script>
+
+        <footer>
+            <p>Instituto Federal de Educação Ciência e Tecnologia Catarinense - Campus Videira<br>
+                <br>
+                Rodovia SC 135, km 125 - Bairro Campo Experimental - CEP 89564-590 - Videira - SC - Fone: (49) 3533-4900
+            </p>
+        </footer>
+    </body>
+
+</html>
+
